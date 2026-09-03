@@ -1,0 +1,4 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cmake.sourceDirectory": "/home/fiky/Documents/Otodidak/Flutter/learningdart/linux/flutter"
+}
