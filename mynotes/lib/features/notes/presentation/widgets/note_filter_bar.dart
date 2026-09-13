@@ -15,8 +15,8 @@ class NoteFilterBar extends StatelessWidget {
     required this.options,
     required this.onSelected,
     this.onSortDirectionToggle,
-    this.onViewModeToggle
-  })
+    this.onViewModeToggle,
+  });
 
   @override
   Widget build(BuildContext context) {

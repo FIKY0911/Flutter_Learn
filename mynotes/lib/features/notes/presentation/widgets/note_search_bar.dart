@@ -10,7 +10,7 @@ class NoteSearchBar extends StatelessWidget {
     super.key,
     this.hintText = 'Search notes...',
     this.onChanged,
-  })
+  });
 
   @override
   Widget build(BuildContext context) {
