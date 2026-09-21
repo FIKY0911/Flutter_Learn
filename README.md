@@ -7,7 +7,11 @@ Repository ini berisi kumpulan proyek dan latihan pembelajaran pengembangan apli
 ## 📂 Struktur Proyek
 
 Repository ini memiliki beberapa sub-proyek Flutter:
-- **`flutter_fundamental/`**: Latihan dasar dan konsep fundamental Flutter (widget, layout, state, dll).
+- **[`flutter_fundamental/`](flutter_fundamental/README.md)**: Modul & panduan lengkap Flutter Fundamental:
+  - **UI Dasar**: Text/Label, Image & Avatar, Button, Text Field/Input, Card, List, Navigation Widgets.
+  - **Layout**: Column (Vertical), Row (Horizontal), Stack & Overlay, Grid, Scrollable Layout.
+  - **Navigasi Antar Halaman**: Push/Back (Passing Data), Bottom Navigation, Drawer Menu, Tab Navigation.
+  - **Studi Kasus**: Aplikasi Katalog Warung Mas Rusdi (*Atomic Design*).
 - **`mynotes/`**: Aplikasi catatan (*Notes App*).
 - **`omni_pos/`**: Proyek aplikasi *Point of Sale* (POS).
 - **`tutorial-install/`**: Panduan/catatan instalasi dan konfigurasi lingkungan Flutter.
