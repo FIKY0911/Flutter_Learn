@@ -11,7 +11,7 @@ Dokumen ini menyajikan panduan mendalam (*step-by-step*) untuk menginstal dan me
 4. [Konfigurasi Environment Variables (PATH)](#4-konfigurasi-environment-variables-path)
 5. [Verifikasi Integrasi Terminal & Flutter Binaries](#5-verifikasi-integrasi-terminal--flutter-binaries)
 6. [Analisis & Eksekusi Flutter Doctor](#6-analisis--eksekusi-flutter-doctor)
-7. [Penyiapan Build Tools untuk Desktop Windows (C++)](#7-penyiapan-build-tools-untuk-desktop-windows-c)
+7. [Penyiapan Editor Kode (Visual Studio Code)](#7-penyiapan-editor-kode-visual-studio-code)
 8. [Konfigurasi Proxy / Mirror Network (Opsional)](#8-konfigurasi-proxy--mirror-network-opsional)
 9. [Panduan Troubleshooting & Penyelesaian Masalah Error](#9-panduan-troubleshooting--penyelesaian-masalah-error)
 
@@ -230,21 +230,19 @@ flutter doctor -v
 
 ---
 
-## 7. Penyiapan Build Tools untuk Desktop Windows (C++)
+## 7. Penyiapan Editor Kode (Visual Studio Code)
 
-Jika Anda berencana mengompilasi aplikasi Flutter menjadi aplikasi desktop native Windows (`.exe`), Anda memerlukan kompiler C++ dari Visual Studio.
+Untuk menulis dan mengembangkan kode Flutter di Windows, editor yang sangat direkomendasikan adalah **Visual Studio Code (VS Code)**.
 
 ### Langkah-Langkah Penyiapan:
-1. Unduh **Visual Studio Installer** dari [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/).
-2. Jalankan `VisualStudioSetup.exe`.
-3. Pada halaman pemilihan beban kerja (*Workloads*):
-   * Berikan centang pada **Desktop development with C++** (Pengembangan desktop dengan C++).
-4. Di panel sebelah kanan (*Installation details*), pastikan komponen berikut tercentang:
-   * `MSVC v143 - VS 2022 C++ x64/x86 build tools`
-   * `Windows 10 SDK` atau `Windows 11 SDK`
-   * `C++ CMake tools for Windows`
-5. Klik **Install** (membutuhkan ruang disk sekitar 7 - 10 GB).
-6. Setelah selesai, jalankan kembali `flutter doctor` untuk memastikan Visual Studio tercentang hijau `[✓]`.
+1. Unduh **Visual Studio Code** untuk Windows dari situs resmi: [https://code.visualstudio.com/](https://code.visualstudio.com/).
+2. Jalankan berkas installer `VSCodeUserSetup-x64-x.x.x.exe`.
+3. Pada opsi instalasi, pastikan mencentang **Add to PATH** serta opsi **Open with Code**.
+4. Setelah terpasang, buka VS Code lalu pasang ekstensi resmi **Flutter** (oleh *Dart Code*). Ekstensi ini akan otomatis memasang dependensi ekstensi **Dart**.
+5. Panduan instalasi langkah demi langkah, konfigurasi `settings.json`, integrasi emulator, dan shortcut produktivitas dijelaskan secara detail di **[`vscode-windows.md`](vscode-windows.md)**.
+
+> ℹ️ **Catatan Tambahan (Build Windows Desktop Native):**  
+> Jika di masa mendatang Anda ingin mem-build aplikasi native Windows (`.exe`), `flutter doctor` akan mengecek komponen C++ build tools dari *Visual Studio (IDE)*. Namun untuk penulisan dan pengembangan kode aplikasi Flutter sehari-hari (Android, Web, Desktop), Anda cukup menggunakan **Visual Studio Code (VS Code)**.
 
 ---
 

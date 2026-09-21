@@ -14,7 +14,10 @@ Repository ini memiliki beberapa sub-proyek Flutter:
   - **Studi Kasus**: Aplikasi Katalog Warung Mas Rusdi (*Atomic Design*).
 - **`mynotes/`**: Aplikasi catatan (*Notes App*).
 - **`omni_pos/`**: Proyek aplikasi *Point of Sale* (POS).
-- **`tutorial-install/`**: Panduan/catatan instalasi dan konfigurasi lingkungan Flutter.
+- **`tutorial-install/`**: Panduan lengkap instalasi dan konfigurasi lingkungan Flutter:
+  - **Flutter SDK**: [`flutter-windows.md`](tutorial-install/flutter-windows.md) | [`flutter-linux.md`](tutorial-install/flutter-linux.md)
+  - **Visual Studio Code**: [`vscode-windows.md`](tutorial-install/vscode-windows.md) | [`vscode-linux.md`](tutorial-install/vscode-linux.md)
+  - **Android Studio & SDK**: [`android-studio-windows.md`](tutorial-install/android-studio-windows.md) | [`android-studio-linux.md`](tutorial-install/android-studio-linux.md)
 
 ---
 
