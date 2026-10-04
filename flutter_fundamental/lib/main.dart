@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
-import 'core/constants/app_strings.dart';
-import 'core/theme/app_theme.dart';
-import 'presentation/screens/main_menu_screen.dart';
+import 'navigasi_antarhalaman/app_router.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const WarungKatalogApp());
+  runApp(const KasirApp());
 }
 
-class WarungKatalogApp extends StatelessWidget {
-  const WarungKatalogApp({super.key});
+class KasirApp extends StatelessWidget {
+  const KasirApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: AppStrings.appName,
+    return MaterialApp.router(
+      title: 'Aplikasi Kasir POS',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      home: const MainMenuScreen(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        useMaterial3: true,
+      ),
+      routerConfig: appRouter,
     );
   }
 }
